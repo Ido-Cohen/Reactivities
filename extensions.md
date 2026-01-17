@@ -34,5 +34,13 @@ Visual viewer for SQLite databases (`.db`, `.sqlite` files).
 
 ---
 
+### ES7+ React/Redux/React-Native snippets
+
+---
+
+### ESLint
+
+---
+
 ## ✅ Tip
 After installing, reload VS Code to ensure all extensions are fully activated.

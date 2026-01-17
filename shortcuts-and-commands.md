@@ -43,22 +43,22 @@ and improve overall coding flow.
 dotnet new sln
 ```
 
-## 🌐 Create a New Web API Project
+### 🌐 Create a New Web API Project
 ```bash
 dotnet new webapi -controllers -n {project-name}
 ```
 dotnet new classlib -n {class-name}
-## 🔗 Add Project to Solution
+### 🔗 Add Project to Solution
 ```bash
 dotnet sln add {project-name}
 ```
 
-## 📋 List Solution Projects
+### 📋 List Solution Projects
 ```bash
 dotnet sln list
 ```
 
-## 🛠️ Install dotnet-ef
+### 🛠️ Install dotnet-ef
 
 Cross-platform CLI tool for Entity Framework Core.
 
@@ -66,32 +66,32 @@ Cross-platform CLI tool for Entity Framework Core.
 dotnet tool install -g dotnet-ef
 ```
 
-## 🧬 Add Migration
+### 🧬 Add Migration
 ```bash
 dotnet ef migrations add {migration-name} -o Data/Migrations
 ```
 
-## 🗄️ Update / Create Database
+### 🗄️ Update / Create Database
 ```bash
 dotnet ef database update
 ```
 
-## ▶️ Run Application
+### ▶️ Run Application
 ```bash
 dotnet run
 ```
 
-## 🔥 Run with Hot Reload
+### 🔥 Run with Hot Reload
 ```bash
 dotnet watch
 ```
 
-## 📦 Restore Packages
+### 📦 Restore Packages
 ```bash
 dotnet restore
 ```
 
-## Git Commands
+## 🔀 Git Commands
 ### Add Git Ignore File
 ```bash
 dotnet new gitignore
@@ -99,6 +99,40 @@ dotnet new gitignore
 **Add to this file the following files:**
 - appsettings.json
 - *.db files
+
+## ⚛️ React Commands
+
+### Install React Using Vite
+```bash
+npm create vite@latest
+```
+### Create local CA
+```bash
+npm install -D vite-plugin-mkcert
+```
+### Install Axios
+```bash
+npm install axios
+```
+### Install Material UI
+```bash
+npm install @mui/material @emotion/react @emotion/styled
+```
+### Add Roboro font for Material UI
+```bash
+npm install @fontsource/roboto
+```
+```TypeScript
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+```
+
+### Icons for Material UI
+```bash
+npm install @mui/icons-material
+```
 
 ## 🅰️ Angular CLI Commands
 
