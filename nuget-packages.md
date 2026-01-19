@@ -29,6 +29,14 @@ Used when:
 to persistence layer
 ---
 
+### 🔹 MediatR
+bla bla bla
+to application layer
+
+### AutoMapper
+bla bla
+to application layer
+
 ### 🔹 Microsoft.AspNetCore.OpenApi
 Provides OpenAPI (Swagger) support for ASP.NET Core APIs.
 
