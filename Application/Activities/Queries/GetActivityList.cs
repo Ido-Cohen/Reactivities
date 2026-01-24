@@ -15,19 +15,19 @@ namespace Application.Activities.Queries
         {
             public async Task<List<Activity>> Handle(Query request, CancellationToken cancellationToken)
             {
-                try
-                {
-                    for (int i = 0; i < 10; i++)
-                    {
-                        logger.LogInformation($"Task {i + 1}/10 - Checking for cancellation.");
-                        cancellationToken.ThrowIfCancellationRequested();
-                        await Task.Delay(1000, cancellationToken);
-                    }
-                }
-                catch (System.Exception)
-                {
-                    logger.LogInformation("Task was cancelled.");
-                }
+                // try
+                // {
+                //     for (int i = 0; i < 10; i++)
+                //     {
+                //         logger.LogInformation($"Task {i + 1}/10 - Checking for cancellation.");
+                //         cancellationToken.ThrowIfCancellationRequested();
+                //         await Task.Delay(1000, cancellationToken);
+                //     }
+                // }
+                // catch (System.Exception)
+                // {
+                //     logger.LogInformation("Task was cancelled.");
+                // }
 
                 return await context.Activities.ToListAsync(cancellationToken);
             }
